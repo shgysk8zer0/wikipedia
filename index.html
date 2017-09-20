@@ -5,9 +5,10 @@
 		<meta charset="UTF-8" />
 		<script type="module" src="js/index.js" async=""></script>
 		<script type="application/javasscript" src="js/index.js" nomodule="" async=""></script>
+		<link rel="stylesheet" href="css/styles/index.css" media="all"></link>
 	</head>
 	<body>
-		<form name="search">
+		<form name="search" hidden="">
 			<input type="search" name="query" required="" />
 			<button type="submit">Search</button>
 			<details>
@@ -20,8 +21,8 @@
 			<div class="search-result">
 				<a href="https://en.wikipedia.org/?curid" target="_blank">
 					<h3 data-field="title"></h3>
+					<blockquote data-field="snippet"></blockquote>
 				</a>
-				<blockquote data-field="snippet"></blockquote>
 			</div>
 		</template>
 	</body>

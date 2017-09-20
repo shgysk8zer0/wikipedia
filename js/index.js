@@ -1,6 +1,7 @@
 import {$} from './std-js/functions.js';
 const ENDPOINT = 'https://en.wikipedia.org/w/api.php';
 $(self).ready(() => {
+	document.forms.search.hidden = false;
 	$(document.forms.search).submit(async (submit) => {
 		submit.preventDefault();
 		const form = new FormData(submit.target);
