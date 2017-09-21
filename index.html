@@ -3,6 +3,7 @@
 	<head>
 		<title>Wikipedia Viewer</title>
 		<meta charset="UTF-8" />
+		<script src="https://cdn.polyfill.io/v2/polyfill.min.js" crossorigin="annonymous"></script>
 		<script type="module" src="js/index.js" async=""></script>
 		<script type="application/javasscript" src="js/index.js" nomodule="" async=""></script>
 		<link rel="stylesheet" href="css/styles/index.css" media="all"></link>
@@ -13,7 +14,16 @@
 		</a>
 		<form name="search" hidden="">
 			<input type="search" name="query" required="" />
-			<button type="submit">Search</button>
+			<button type="submit">
+				<svg width="24" height="24" class="current-color">
+					<use xlink:href="img/icons.svg#edit-find" />
+				</svg>
+			</button>
+			<button type="reset">
+				<svg width="24" height="24" class="current-color">
+					<use xlink:href="img/icons.svg#edit-clear" />
+				</svg>
+			</button>
 			<details>
 				<summary>Options</summary>
 				<input type="number" name="limit" min="1" max="25" value="10" placeholder="#" required="" />

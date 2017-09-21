@@ -1,0 +1,32 @@
+form {
+	color: #fefefe;
+	text-align: center;
+}
+input {
+	color: inherit;
+	background: none;
+	border: none;
+	border-bottom: 2px solid currentColor;
+}
+input:not(:focus) {
+	width: 8em;
+}
+input:invalid {
+	color: red;
+}
+form button {
+	background: none;
+	border: none;
+	color: inherit;
+	padding: 0.3em;
+}
+form button[type="submit"]:hover {
+	color: green;
+}
+form button[type="reset"]:hover {
+	color: red;
+}
+form:invalid [type="submit"] {
+	pointer-events: none;
+	opactiy: 0.7;
+}
