@@ -4,6 +4,7 @@
 /npm-debug.log
 *.min*
 *.map
+/img/icons.svg
 
 #################
 ## Eclipse
