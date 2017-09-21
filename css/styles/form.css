@@ -19,6 +19,7 @@ form button {
 	border: none;
 	color: inherit;
 	padding: 0.3em;
+	cursor: pointer;
 }
 form button[type="submit"]:hover {
 	color: green;
@@ -27,6 +28,7 @@ form button[type="reset"]:hover {
 	color: red;
 }
 form:invalid [type="submit"] {
-	pointer-events: none;
+	/*pointer-events: none;*/
 	opactiy: 0.7;
+	cursor: not-allowed;
 }
